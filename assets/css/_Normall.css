@@ -1,0 +1,42 @@
+:root{
+    --main-color: #4D7AFF;
+    --main-color-hover: #002BAD;
+    --font-color: #ffffff;
+    --alert-color: #FF4D4F;
+    --agree-color: #54FF8D;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit
+}
+
+*:focus {
+    outline: none;
+}
+
+
+body {
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: "OX_regular";
+    background: var(--bg-app);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none
+}
+
+/* needed codes */
+
+.title-main{}
+
+.title-main__h3{}

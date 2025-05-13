@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "OX_light";
+    src: url(../fonts/Oxanium-Light.woff);
+}
+@font-face {
+    font-family: "OX_regular";
+    src: url(../fonts/Oxanium-Regular.woff);
+}
+@font-face {
+    font-family: "OX_bold";
+    src: url(../fonts/Oxanium-Bold.woff);
+}
+@font-face {
+    font-family: "OX_extra_bold";
+    src: url(../fonts/Oxanium-ExtraBold.woff);
+}
