@@ -106,6 +106,7 @@ a {
 }
 
 .add__image {
+    cursor: pointer;
     width: 2.8rem;
     height: 2.8rem;
 }

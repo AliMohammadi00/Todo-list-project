@@ -286,7 +286,7 @@
     align-items: center;
 }
 
-.info__date{
+.info__date {
     width: 10rem;
     text-align: center;
 }
@@ -303,6 +303,35 @@
     background: var(--alert-color);
 }
 
-.info__show-status-task--done{
+.info__show-status-task--done {
     background: var(--agree-color);
+}
+
+/* pagenation codes */
+
+.show-tasks__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.buttons__button {
+    width: 3.7rem;
+    height: 3.7rem;
+    margin: 0 .5rem;
+    font-family: "OX_regular";
+    background: var(--main-color);
+    border: none;
+    color: var(--text-color);
+    border-radius: .7rem;
+    font-size: 2rem;
+    transition: border-radius ease-in .2s, background ease-in .2s;
+    cursor: pointer;
+}
+
+.buttons__button:hover,
+.buttons__button--active {
+    border-radius: .3rem;
+    background: var(--main-color-hover);
 }

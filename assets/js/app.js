@@ -2,6 +2,7 @@ let linesEffects = document.querySelectorAll(".title-main__h3")
 let asideTag = document.querySelector(".manage")
 let manageFirstPart = document.querySelector('.manage__add-folder')
 let manageSecondPart = document.querySelector(".manage__all-folder")
+// let userInfoHeader = document.querySelector(".base__show-user-info")
 
 window.addEventListener("load", () =>{
     asideTag.classList.add("manage--active")
