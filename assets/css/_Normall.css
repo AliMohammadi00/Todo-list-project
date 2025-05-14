@@ -1,8 +1,9 @@
 :root{
     --main-color: #4D7AFF;
     --main-color-hover: #002BAD;
-    --font-color: #ffffff;
+    --text-color: #ffffff;
     --alert-color: #FF4D4F;
+    --alert-color-hover: #D9363E;
     --agree-color: #54FF8D;
 }
 
@@ -10,6 +11,13 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 *,
@@ -27,8 +35,8 @@ body {
     line-height: 1.6;
     font-size: 1.6rem;
     font-family: "OX_regular";
-    background: var(--bg-app);
     color: var(--text-color);
+    margin-top: .6rem;
 }
 
 a {
@@ -37,6 +45,65 @@ a {
 
 /* needed codes */
 
-.title-main{}
+.title-main{
+    width: 100%;
+    display: flex;
+}
 
-.title-main__h3{}
+.title-main__h3{
+    width: 100%;
+    position: relative;
+    font-family: "OX_bold";
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+}
+
+.title-main__h3::before{
+    width: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    height: .1rem;
+    background: #ffffff;
+    top: 1.8rem;
+    transition: right ease-in .2s, width ease-in .2s;
+}
+
+.title-main__h3--js-activate::before{
+    width: 16.3rem;
+    left: 15.5rem;
+}
+
+.active--visible{
+    visibility: visible !important;
+    width: 100% !important;
+}
+/* add codes */
+
+
+.add--form {
+    border-radius: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    height: 4rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-body__input {
+    width: 85%;
+    height: 100%;
+    border: none;
+    font-family: "OX_regular";
+}
+
+.input-body__add {
+    background: none;
+    border: none;
+}
+
+.add__image {
+    width: 2.8rem;
+    height: 2.8rem;
+}
