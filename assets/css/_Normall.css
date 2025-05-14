@@ -1,10 +1,11 @@
-:root{
+:root {
     --main-color: #4D7AFF;
     --main-color-hover: #002BAD;
     --text-color: #ffffff;
     --alert-color: #FF4D4F;
     --alert-color-hover: #D9363E;
     --agree-color: #54FF8D;
+    --tasks-bg: #85A0F0;
 }
 
 html {
@@ -13,7 +14,7 @@ html {
     scroll-behavior: smooth
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -45,12 +46,12 @@ a {
 
 /* needed codes */
 
-.title-main{
+.title-main {
     width: 100%;
     display: flex;
 }
 
-.title-main__h3{
+.title-main__h3 {
     width: 100%;
     position: relative;
     font-family: "OX_bold";
@@ -58,7 +59,7 @@ a {
     margin: 1.5rem 0;
 }
 
-.title-main__h3::before{
+.title-main__h3::before {
     width: 0;
     left: 0;
     content: "";
@@ -69,15 +70,16 @@ a {
     transition: right ease-in .2s, width ease-in .2s;
 }
 
-.title-main__h3--js-activate::before{
+.title-main__h3--js-activate::before {
     width: 16.3rem;
     left: 15.5rem;
 }
 
-.active--visible{
+.active--visible {
     visibility: visible !important;
     width: 100% !important;
 }
+
 /* add codes */
 
 
@@ -106,4 +108,12 @@ a {
 .add__image {
     width: 2.8rem;
     height: 2.8rem;
+}
+
+.done-icon{
+    fill: var(--agree-color);
+}
+
+.not-done-icon{
+    fill: var(--alert-color);
 }

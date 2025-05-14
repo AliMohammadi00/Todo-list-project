@@ -246,3 +246,63 @@
     font-family: "OX_extra_bold";
     font-family: 2.5rem;
 }
+
+/* tasks area */
+
+.show-tasks__task-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task-area__task {
+    width: 100%;
+    background: var(--tasks-bg);
+    border-radius: .7rem;
+    margin: .5rem 0;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.3rem;
+}
+
+.task__title {
+    display: flex;
+}
+
+.task__status-icon {
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-right: 1.2rem;
+}
+
+.task__title {
+    font-size: 1.8rem;
+    font-family: "OX_bold";
+}
+
+.task__info {
+    display: flex;
+    align-items: center;
+}
+
+.info__date{
+    width: 10rem;
+    text-align: center;
+}
+
+.info__show-status-task {
+    width: 10rem;
+    border-radius: .7rem;
+    text-align: center;
+    padding: .2rem;
+    margin-left: 1.2rem;
+}
+
+.info__show-status-task--not-done {
+    background: var(--alert-color);
+}
+
+.info__show-status-task--done{
+    background: var(--agree-color);
+}
