@@ -5,6 +5,15 @@ let manageSecondPart = document.querySelector(".manage__all-folder")
 let userInfoHeader = document.querySelector(".base__show-user-info")
 let userName = document.querySelector(".user-info__name")
 let baseTag = document.querySelector(".base")
+let mobileMenuBtn = document.querySelector(".menu-btn")
+let menu = document.querySelector(".mobile-menu")
+let cover = document.querySelector(".bg-dark")
+
+mobileMenuBtn.addEventListener("click", () => {
+    mobileMenuBtn.classList.toggle('menu-btn--active')
+    menu.classList.toggle("menu--open")
+    cover.classList.toggle("cover--active")
+})
 
 window.addEventListener("load", () =>{
     asideTag.classList.add("manage--active")
