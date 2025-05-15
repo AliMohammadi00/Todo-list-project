@@ -1,50 +1,98 @@
+@media (max-width:1400px) {}
 
-@media (min-width:576px) {
+@media (max-width:1200px) {}
 
-}
-
-@media (min-width:768px) {
-
-    .add-task__title{
+@media (max-width:992px) {
+    
+    .add-task__title {
         font-size: 1.8rem;
     }
- 
-    .title-main__h3{
+
+    .title-main__h3 {
         font-size: 1.3rem !important;
     }
-    .title-main__h3::before{
+
+    .title-main__h3::before {
         display: none;
     }
+
     .manage {
         width: 30%;
     }
+
     .base {
         width: 70%;
     }
 
-    .user-info__show-name{
+    .user-info__show-name {
         font-size: 1.6rem;
     }
 
-    .add--form{
+    .add--form {
         width: auto;
     }
-    .log-out__logo{
+
+    .log-out__logo {
         width: 2.7rem;
         height: 2.7rem;
     }
 }
 
-@media (min-width:992px) {
-.add-task__title{
-font-size: 2.5rem;
-}
+@media (max-width:768px) {
+    .add-task__title {
+        font-size: 1.6rem;
+    }
+    .menu-btn{
+        display: flex;
+    }
+
+    .show-user-info__log-out{
+        display: none;
+    }
+    .user-info__name{
+        display: none;
+    }
+    .user-info__mobile-name{
+        display: block;
+        font-family: "OX_extra_bold";
+    }
+    .manage {
+        display: none;
+    }
+
+    .base {
+        width: 100%;
+    }
 }
 
-@media (min-width:1200px) {
- 
-}
+@media (max-width:576px) {
+    .show-tasks__task-area{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+        flex-grow: 1;
+    }
+    .task-area__task{
+        width: 22rem;
+        flex-direction: column;
+        transition: transform ease-in .2s,box-shadow ease-in .2s;
+    }
 
-@media (min-width:1400px) {
-   
+    .task-area__task:hover{
+        transform: scale(1.1);
+        box-shadow: 0 .4rem 1rem .3rem #00000040;
+    }
+
+    .task__info{
+        flex-direction: column;
+    }
+
+    .info__date{
+        width: 100%;
+    }
+
+    .all-tasks__add-task{
+        flex-wrap: wrap;
+    }
 }

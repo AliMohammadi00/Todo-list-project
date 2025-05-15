@@ -14,6 +14,7 @@
     margin-right: 1rem;
     box-shadow: .4rem 0 4rem rgba(0, 0, 0, .25);
     transition: height ease-in .7s;
+    margin-top: .6rem;
 }
 
 .manage--active {
@@ -128,21 +129,12 @@
     flex-wrap: wrap;
     align-content: baseline;
     transition: opacity ease-in .2s;
+    margin-top: .6rem;
 }
 
-.base--active{
+.base--active {
     opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
 
 .base__show-user-info {
     width: 0;
@@ -157,13 +149,9 @@
     box-shadow: 0 .4rem .4rem rgba(0, 0, 0, .16);
     margin-bottom: 1.5rem;
     transition: width ease-in .7s, visible ease-in .7s;
+    position: relative;
+    z-index: 1000;
 }
-
-
-
-
-
-
 
 .show-user-info__user-info {
     display: flex;
@@ -184,12 +172,16 @@
     transition: opacity ease-in .2s;
 }
 
-.user-info__name--active{
+.user-info__name--active {
     opacity: 1;
 }
 
 .user-info__show-name {
     color: var(--main-color-hover);
+}
+
+.user-info__show-name-mobile {
+    display: none;
 }
 
 .show-user-info__log-out {
@@ -208,6 +200,46 @@
     color: var(--alert-color);
 }
 
+.menu-btn {
+    width: 4rem;
+    height: 4rem;
+    box-shadow: 0px 0px 2rem rgba(4, 196, 255, 0.212);
+    background-color: var(--text-color);
+    border-radius: .7rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    margin-left: 1.5rem;
+}
+
+.menu-btn__lines {
+    position: relative;
+}
+
+.menu-btn__lines,
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+    content: "";
+    width: 2.5rem;
+    height: .4rem;
+    background: var(--main-color);
+    display: block;
+    border-radius: 10rem;
+    transition: all ease-in-out .2s;
+}
+
+.menu-btn__lines::before {
+    position: absolute;
+    top: -.7rem;
+}
+
+.menu-btn__lines::after {
+    position: absolute;
+    bottom: -.7rem;
+}
+
 /* task adder */
 
 .base__all-tasks {
@@ -217,6 +249,7 @@
 .all-tasks__add-task {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 2.7rem;
 }
@@ -226,10 +259,6 @@
     font-family: "OX_extra_bold";
     font-size: 3.5rem;
     margin-right: 5rem;
-}
-
-.add--form {
-    width: 35rem;
 }
 
 .all-tasks__add-task>form {
@@ -364,4 +393,73 @@
 .buttons__button--active {
     border-radius: .3rem;
     background: var(--main-color-hover);
+}
+
+.mobile-menu {
+    width: 70%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    margin-top: 1rem;
+    z-index: 1000;
+    display: none;
+}
+
+.mobile-add-form {
+    width: 100%;
+    background: var(--main-color);
+}
+
+.mobile-add-form>input {
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
+.mobile-add-form>input::placeholder {
+    color: var(--text-color);
+}
+
+.mobile-add-form svg {
+    fill: var(--text-color);
+}
+
+.mobile-all-folder {
+    margin-top: 1rem;
+    background: var(--main-color);
+    border-radius: .7rem;
+    max-height: 15rem;
+}
+
+.mobile-log-out {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--alert-color);
+    margin-top: 1rem;
+    border-radius: .7rem;
+    padding: .7rem 0;
+}
+
+.mobile-log-out>svg{
+    fill: var(--text-color);
+}
+
+.mobile-log-out>h4 {
+    color: var(--text-color);
+}
+
+.bg-dark{
+    width: 100%;
+    height: 100vb;
+    position: absolute;
+    background: #0000006c;
+    z-index: 100;
+    display: none;
+}
+
+.user-info__mobile-name{
+    display: none;
 }
