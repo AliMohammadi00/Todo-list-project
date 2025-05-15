@@ -4,11 +4,41 @@
 }
 
 @media (min-width:768px) {
+
+    .add-task__title{
+        font-size: 1.8rem;
+    }
  
+    .title-main__h3{
+        font-size: 1.3rem !important;
+    }
+    .title-main__h3::before{
+        display: none;
+    }
+    .manage {
+        width: 30%;
+    }
+    .base {
+        width: 70%;
+    }
+
+    .user-info__show-name{
+        font-size: 1.6rem;
+    }
+
+    .add--form{
+        width: auto;
+    }
+    .log-out__logo{
+        width: 2.7rem;
+        height: 2.7rem;
+    }
 }
 
 @media (min-width:992px) {
-
+.add-task__title{
+font-size: 2.5rem;
+}
 }
 
 @media (min-width:1200px) {
